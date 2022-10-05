@@ -157,10 +157,10 @@ class QTreeLeafNode final : public QTreeNode
 class Map
 {
 	public:
-		static constexpr int32_t maxViewportX = 14; //min value: maxClientViewportX + 1, default value: maxClientViewportX + 3
-		static constexpr int32_t maxViewportY = 10; //min value: maxClientViewportY + 1, default value: maxClientViewportY + 5
-		static constexpr int32_t maxClientViewportX = 12;
-		static constexpr int32_t maxClientViewportY = 8;
+		static constexpr int32_t maxViewportX = 25; //min value: maxClientViewportX + 1, default value: maxClientViewportX + 3
+		static constexpr int32_t maxViewportY = 15; //min value: maxClientViewportY + 1, default value: maxClientViewportY + 5
+		static constexpr int32_t maxClientViewportX = 24;
+		static constexpr int32_t maxClientViewportY = 14;
 
 		uint32_t clean() const;
 
