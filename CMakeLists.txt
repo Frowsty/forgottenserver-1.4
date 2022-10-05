@@ -43,6 +43,7 @@ endif ()
 
 find_package(Threads REQUIRED)
 find_package(PugiXML REQUIRED)
+find_package(ZLIB REQUIRED)
 
 # Selects LuaJIT if user defines or auto-detected
 if (DEFINED USE_LUAJIT AND NOT USE_LUAJIT)
@@ -75,6 +76,7 @@ target_link_libraries(tfs PRIVATE
         ${LUA_LIBRARIES}
         ${MYSQL_CLIENT_LIBS}
         ${PUGIXML_LIBRARIES}
+        ${ZLIB_LIBRARY}
         )
 
 ### INTERPROCEDURAL_OPTIMIZATION ###
